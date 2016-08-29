@@ -1,3 +1,11 @@
+
+"""
+    setup.py
+    - test_suite specifies the location of the test files
+
+
+"""
+
 from setuptools import setup, find_packages
 import sys
 version = 0.1
@@ -10,22 +18,9 @@ setup(name='unittest_test',
       url='https://github.com/berkeleyapplied/baa_messages',
       packages=find_packages(exclude='test'),
       license='MIT License',
-      test_suite='test',
-      install_requires=[
-          'thrift',
-          'pre-commit',
-          'AWSIoTPythonSDK',
-          'Enum',
-          'pypubsub',
-          'lz4tools'
-      ],
-      tests_require=[
-	'thrift',
-        'AWSIoTPythonSDK',
-        'Enum',
-        'pypubsub',
-        'mock'
-      ],
+      test_suite='tests',
+      install_requires=[],
+      tests_require=[],
       platforms=['any'],
       classifiers=['Development Status :: 1 - Alpha',
                    'Intended Audience :: Developers',
