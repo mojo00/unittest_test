@@ -1,4 +1,3 @@
-
 """
     setup.py
     - test_suite specifies the location of the test files

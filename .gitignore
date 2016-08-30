@@ -1,2 +1,4 @@
 /unittest_test_env
 /.eggs
+/unittest_test.egg-info
+/.idea
